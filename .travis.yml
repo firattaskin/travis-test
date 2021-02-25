@@ -1,7 +1,9 @@
 language: node_js
-
 node_js:
-- node
-- 'lts/*'
-
-cache: npm
+  - "stable"
+script: 
+  - echo '******Build Starts*******'
+  - echo 'Installing Depencinies'
+  - npm install
+  - echo Running Tests
+  - mocha
